@@ -14,7 +14,6 @@ class School
   def add_student(student, grade)
     school[:roster] = []
     school[:roster} << student
-    
   end
 
 end
