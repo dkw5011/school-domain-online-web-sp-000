@@ -22,6 +22,15 @@ class School
       @roster[grade]
   end
 
-  
+  def sort
+ 
+    sorted_hash = {}
+    final_hash = {}
+      @roster.sort.map do |key,value|
+      sorted_hash = {key => value.sort}
+     final_hash.merge!(sorted_hash)
+    end
+    return final_hash
+  end
 
 end
