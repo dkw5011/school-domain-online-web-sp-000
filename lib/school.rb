@@ -22,13 +22,6 @@ class School
       @roster[grade]
   end
 
-  def sort
-    sorted_hash = {}
-@roster.sort.map do |key,value|
-  sorted_hash = {key => value.sort}
- 
- end
- 
- end
+  
 
 end
